@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // LINHA CORRIGIDA
 import { useToast } from '../contexts/ToastContext';
 
 const JurosCompostos = () => {
