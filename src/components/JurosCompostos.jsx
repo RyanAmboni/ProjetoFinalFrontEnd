@@ -1,4 +1,4 @@
-import React, { useState } => {
+import React, { useState } from 'react';
 import { useToast } from '../contexts/ToastContext';
 
 const JurosCompostos = () => {
