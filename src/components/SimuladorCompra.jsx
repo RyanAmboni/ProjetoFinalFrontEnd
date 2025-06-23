@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import { useToast } from '../contexts/ToastContext';
 
 const getCalculadoraData = async () => {
@@ -7,7 +7,7 @@ const getCalculadoraData = async () => {
   const despesas = JSON.parse(localStorage.getItem('despesas') || '[]');
   
   const totalReceitas = receitas.reduce((soma, r) => soma + r.valor, 0);
-  const totalDespesas = despesas.reduce((soma, d) => soma + d.valor, 0);
+  const totalDespesas = despesas.reduce((soma, d) => soma + d.valor, 0); 
   
   return { totalReceitas, totalDespesas, saldo: totalReceitas - totalDespesas };
 };
