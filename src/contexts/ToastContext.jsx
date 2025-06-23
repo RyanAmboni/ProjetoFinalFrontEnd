@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback } from 'react';
+import React, { createContext, useState, useContext, useEffect, useCallback } from 'react';
 
 const Toast = ({ message, type, onDismiss, isExiting }) => {
   return (
